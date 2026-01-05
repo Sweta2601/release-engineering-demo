@@ -24,3 +24,15 @@ jobs:
     - name: Run tests
       run: |
         pytest
+        
+    - name: Build Artifact
+      run: |
+        echo "Building versioned artifact"
+
+    - name: Deploy to Staging
+      run: |
+        echo "Deploying to staging environment"
+
+    - name: Smoke Tests
+      run: |
+        echo "Running smoke tests on staging"
